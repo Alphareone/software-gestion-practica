@@ -1,0 +1,48 @@
+/* ══════════════════════════════════════════
+   REDUCED MOTION
+   ══════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .loader-spinner { animation: none !important; opacity: 0.6; }
+  .pw-drop:hover, .pw-drop.dragover { transform: none !important; }
+  .pw-step-circle { transition: none !important; }
+  .pw-step-connector { transition: none !important; }
+  .toast-item { transition: none !important; }
+}
+
+/* ══════════════════════════════════════════════
+   Scrollbar global
+   ══════════════════════════════════════════════ */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* ══════════════════════════════════════════════
+   Focus ring global
+   ══════════════════════════════════════════════ */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent);
+  box-shadow: var(--focus-ring);
+}
+
+/* Audit card wrapper (structural light-only) */
+[data-theme="light"] .audit-card #ahContent {
+  padding: 0;
+}
+
+/* Dashboard system cards */
+.card-system {
+  background: var(--card-system-bg);
+  border-color: var(--border);
+}

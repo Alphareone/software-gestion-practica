@@ -1,0 +1,31 @@
+{
+  "name": "webapp-gestion",
+  "version": "1.0.0",
+  "description": "Sistema web para gestión y automatización de procesos de productos, integración con MercadoLibre, control de precios, auditorías y administración de usuarios. Desarrollado en PHP 8+ con MySQL, arquitectura por capas (Controller → Service → Model → DB).",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i public_html/assets/css/tailwind.css -o public_html/assets/css/dist/tailwind.css",
+    "build:dev": "npx @tailwindcss/cli -i public_html/assets/css/tailwind.css -o public_html/assets/css/dist/tailwind.css --map",
+    "build:prod": "npx @tailwindcss/cli -i public_html/assets/css/tailwind.css -o public_html/assets/css/dist/tailwind.min.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i public_html/assets/css/tailwind.css -o public_html/assets/css/dist/tailwind.css --watch",
+    "clean": "rm -rf public_html/assets/css/dist/",
+    "prebuild": "npm run clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasbaxman/e-practicas-software.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/matiasbaxman/e-practicas-software/issues"
+  },
+  "homepage": "https://github.com/matiasbaxman/e-practicas-software#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tabulator-tables": "^6.4.0",
+    "tailwindcss": "^4.3.0"
+  }
+}

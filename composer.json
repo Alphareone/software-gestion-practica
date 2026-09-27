@@ -1,0 +1,23 @@
+{
+    "name": "gestion/webapp",
+    "description": "Sistema de gestion corporativa",
+    "type": "project",
+    "autoload": {
+        "classmap": [
+            "app/Controllers/",
+            "app/Models/",
+            "app/Services/",
+            "app/Helpers/",
+            "app/core/",
+            "app/libs/"
+        ]
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "echo 'Autoloader generated.'"
+        ]
+    },
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.1"
+    }
+}

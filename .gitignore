@@ -1,0 +1,21 @@
+# Entornos y credenciales
+.env
+
+# Logs y temporales
+/app/temp/
+*.log
+
+# Artefactos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de bloqueo de Office y LibreOffice
+~$*
+.~lock.*#
+
+# Exportaciones generadas
+/storage/walmart-exports/
+
+#
+gestion_espejo.sql
+*.sql
